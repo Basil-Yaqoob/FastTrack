@@ -1,0 +1,165 @@
+/* Global Form Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    width: 100%;
+}
+
+.new-added-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.new-added-form .form-group {
+    margin-bottom: 20px;
+}
+
+.new-added-form label {
+    font-weight: 500;
+    font-size: 14px;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.new-added-form input[type="text"],
+.new-added-form input[type="email"],
+.new-added-form input[type="file"],
+.new-added-form textarea,
+.new-added-form select {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #d1d3e2;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f4f7fc;
+}
+
+.new-added-form select {
+    background-color: #fff;
+}
+
+.new-added-form input[type="text"]:focus,
+.new-added-form input[type="email"]:focus,
+.new-added-form textarea:focus,
+.new-added-form select:focus {
+    outline: none;
+    border-color: #0061f2;
+}
+
+.new-added-form input[type="text"]::placeholder,
+.new-added-form input[type="email"]::placeholder,
+.new-added-form textarea::placeholder {
+    color: #9e9e9e;
+}
+
+.new-added-form .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust the min-width */
+    gap: 20px;
+}
+
+.new-added-form .col-xl-3,
+.new-added-form .col-lg-6,
+.new-added-form .col-12 {
+    flex: 1;
+    min-width: 250px;
+}
+
+.new-added-form .upload-photo {
+    grid-column: span 2; /* Make this span 2 columns */
+}
+
+.new-added-form button[type="submit"],
+.new-added-form button[type="reset"] {
+    margin-top: 80px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.new-added-form button[type="submit"] {
+    background-color: #f3af09;
+    color: white;
+    width: 150px;
+}
+
+.new-added-form button[type="submit"]:hover {
+    background-color: #d49100;
+}
+
+.new-added-form button[type="reset"] {
+    background-color: #0a0f30;
+    color: white;
+    width: 144px;
+}
+
+.new-added-form button[type="reset"]:hover {
+    background-color: #05081a;
+}
+
+textarea.textarea {
+    resize: vertical;
+}
+
+textarea.form-control {
+    height: 150px;
+}
+
+.new-added-form .btn-hover-bluedark:hover {
+    background-color: #0a0f30;
+}
+
+.new-added-form .btn-gradient-yellow {
+    background: linear-gradient(to right, #f3af09, #fdc020);
+}
+
+.new-added-form .text-dark-medium {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Additional Styles */
+.heading-layout1 h3 {
+    font-size: 22px;
+    color: #333;
+}
+
+.dropdown-toggle {
+    color: #666;
+}
+
+.dropdown-toggle:hover {
+    color: #333;
+}
+
+.form-control-file {
+    margin-top: 10px;
+    width: 100%; /* Ensure full width */
+}
+
+/* Calendar icon styling */
+input[type="text"].air-datepicker {
+    position: relative;
+}
+
+input[type="text"].air-datepicker + i {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 16px;
+    color: #666;
+}
