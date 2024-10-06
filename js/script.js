@@ -1,4 +1,8 @@
-// Script for any dynamic functionality (if needed in the future)
-document.addEventListener('DOMContentLoaded', function() {
-    console.log("FastTransit Dashboard Loaded");
-});
+function toggleMenu(submenuId) {
+    var submenu = document.getElementById(submenuId);
+    if (submenu.style.display === "block") {
+        submenu.style.display = "none";
+    } else {
+        submenu.style.display = "block";
+    }
+}

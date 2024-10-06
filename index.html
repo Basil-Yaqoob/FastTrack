@@ -13,17 +13,89 @@
         <!-- Sidebar -->
         <nav class="sidebar">
             <div class="logo">
-                <img src="images/5856.jpg">
+                <img src="images/5856.jpg" alt="Logo">
             </div>
             <ul>
-                <li><a href="index.html">Dashboard</a></li>
-                <li><a href="#">Admin</a></li>
-                <li><a href="student_form.html">Student</a></li>
-                <li><a href="#">Parents</a></li>
-                <li><a href="#">Account</a></li>
-                <li><a href="#">Bus Driver</a></li>
-                <li><a href="#">Notice</a></li>
-                <li><a href="#">Message</a></li>
+                <li>
+                    <a href="#" class="parent-link" onclick="toggleMenu('dashboard-submenu')">
+                        <i class="fas fa-tachometer-alt"></i> Dashboard
+                    </a>
+                    <ul class="submenu" id="dashboard-submenu">
+                        <li><a href="index.html">Main Menu</a></li>
+                        <li><a href="#">Option 2</a></li>
+                        <li><a href="#">Option 3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="parent-link" onclick="toggleMenu('admin-submenu')">
+                        <i class="fa-solid fa-user-tie"></i>Admin
+                    </a>
+                    <ul class="submenu" id="admin-submenu">
+                        <li><a href="#">Option 1</a></li>
+                        <li><a href="#">Option 2</a></li>
+                        <li><a href="#">Option 3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="parent-link" onclick="toggleMenu('student-submenu')">
+                        <i class="fa-solid fa-user-graduate"></i>Student
+                    </a>
+                    <ul class="submenu" id="student-submenu">
+                        <li><a href="student_form.html">Student Form</a></li>
+                        <li><a href="#">Option 2</a></li>
+                        <li><a href="#">Option 3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="parent-link" onclick="toggleMenu('parents-submenu')">
+                        <i class="fa-solid fa-person"></i>Parents
+                    </a>
+                    <ul class="submenu" id="parents-submenu">
+                        <li><a href="#">Option 1</a></li>
+                        <li><a href="#">Option 2</a></li>
+                        <li><a href="#">Option 3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="parent-link" onclick="toggleMenu('account-submenu')">
+                        <i class="fa-solid fa-file-invoice"></i> Account
+                    </a>
+                    <ul class="submenu" id="account-submenu">
+                        <li><a href="#">Option 1</a></li>
+                        <li><a href="#">Option 2</a></li>
+                        <li><a href="#">Option 3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="parent-link" onclick="toggleMenu('busdriver-submenu')">
+                        <i class="fa-solid fa-bus-simple"></i>Bus Driver
+                    </a>
+                    <ul class="submenu" id="busdriver-submenu">
+                        <li><a href="#">Option 1</a></li>
+                        <li><a href="#">Option 2</a></li>
+                        <li><a href="#">Option 3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="parent-link" onclick="toggleMenu('notice-submenu')">
+                        <i class="fa-solid fa-chalkboard"></i> Notice
+                    </a>
+                    <ul class="submenu" id="notice-submenu">
+                        <li><a href="#">Option 1</a></li>
+                        <li><a href="#">Option 2</a></li>
+                        <li><a href="#">Option 3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="parent-link" onclick="toggleMenu('message-submenu')">
+                        <i class="fa-regular fa-message"></i>Message
+                    </a>
+                    <ul class="submenu" id="message-submenu">
+                        <li><a href="#">Option 1</a></li>
+                        <li><a href="#">Option 2</a></li>
+                        <li><a href="#">Option 3</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
 
@@ -85,58 +157,19 @@
                     <p>Father Name:<strong>Yaqoob Ali</strong></p>
                     <p>Gender: <strong>Male</strong></p>
                     <p>Roll Number:<strong>22K-4634</strong></p>
-                    <p><strong></strong></p>
-                    <p> <strong></strong></p>
-                    <p> <strong></strong></p>
-                    <p> <strong></strong></p>
-                    <p> <strong></strong></p>
                     <p>Admission Date: <strong>05/04/2022</strong></p>
                 </div>
 
                 <div class="notice-board">
                     <h2>Notice Board</h2>
                     <ul>
-                        <span></span><li>18 August, 2024: Route 5B will now also be available at 1pm Onwards.</li></span>
-                        <span><li>18 May, 2024: Point Departure has been delayed to 5:30pm because of Sportics Trophy Ceremony.</li></span>
+                        <li>18 August, 2024: Route 5B will now also be available at 1pm Onwards.</li>
+                        <li>18 May, 2024: Point Departure has been delayed to 5:30pm because of Sportics Trophy Ceremony.</li>
                     </ul>
                 </div>
             </section>
-
-            <!--<section class="exam-results">
-                <h2>All Exam Results</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Exam Name</th>
-                            <th>Subject</th>
-                            <th>Grade Point</th>
-                            <th>Percent From</th>
-                            <th>Percent Upto</th>
-                            <th>Date</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Class Test</td>
-                            <td>Mathematics</td>
-                            <td>4.00</td>
-                            <td>98.00</td>
-                            <td>100.00</td>
-                            <td>20/06/2017</td>
-                        </tr>
-                        <tr>
-                            <td>Pre Test</td>
-                            <td>English</td>
-                            <td>3.50</td>
-                            <td>70.00</td>
-                            <td>100.00</td>
-                            <td>20/06/2017</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
         </div>
-    </div>-->
+    </div>
 
     <script src="js/script.js"></script>
 </body>

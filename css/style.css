@@ -1,3 +1,5 @@
+
+/* Reset and Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -18,15 +20,11 @@ body {
 
 /* Sidebar */
 .sidebar {
-    width: 10% !important; 
+    width: 8% !important;
     height: 100%;
-    background-color: #2a3f54;
+    background-color: #0A3A5E;
     color: white;
     padding-top: 20px;
-}
-.sidebar img{
-    height:100px;
-    border-radius: 50%;
 }
 
 .sidebar .logo {
@@ -34,13 +32,22 @@ body {
     margin-bottom: 20px;
 }
 
+.sidebar img {
+    height: 80px;
+    border-radius: 50%;
+}
+
 .sidebar ul {
     list-style: none;
+    padding-left: 0;
 }
 
 .sidebar ul li {
     padding: 15px;
-    text-align: center;
+    text-align: left;
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
 }
 
 .sidebar ul li a {
@@ -48,6 +55,35 @@ body {
     color: white;
     display: block;
     font-weight: bold;
+}
+
+.sidebar ul li i {
+    margin-right: 10px;
+}
+
+/* Submenu Styling */
+.submenu {
+    display: none;
+    padding-left: 20px;
+}
+
+.submenu li {
+    padding: 10px 0;
+}
+
+.submenu li a {
+    font-weight: normal;
+    color: white;
+}
+
+.submenu li a:hover {
+    background-color: #214466;
+    padding-left: 10px;
+    display: block;
+}
+
+.sidebar ul li:hover {
+    background-color: #214466;
 }
 
 /* Navbar */
@@ -95,7 +131,6 @@ body {
     border-radius: 20px;
     padding-right: 30px;
     width: 500px;
-    
 }
 
 .search-bar i {
@@ -190,11 +225,11 @@ body {
     justify-content: space-between;
     margin-bottom: 30px;
 }
-.profile img{
-height:300px;
-width: 300px;
-}
 
+.profile img {
+    height: 300px;
+    width: 300px;
+}
 
 .profile, .notice-board {
     background-color: #fff;
@@ -202,7 +237,6 @@ width: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     width: 48%;
-    
 }
 
 .profile h2, .notice-board h2 {
@@ -213,29 +247,4 @@ width: 300px;
 .profile p, .notice-board ul li {
     color: #555;
     padding-left: 10px;
-}
-
-
-/* Exam Results */
-.exam-results table {
-    width: 100%;
-    background-color: #fff;
-    border-collapse: collapse;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-.exam-results th, .exam-results td {
-    padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
-
-.exam-results th {
-    background-color: #f2f2f2;
-    color: #333;
-}
-
-.exam-results td {
-    color: #555;
 }
